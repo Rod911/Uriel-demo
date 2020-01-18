@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>E-Commerce</title>
+
+	<!-- CSS -->
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<!-- flickity -->
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity-fade@1/flickity-fade.css">
+
+	<!-- FontAwesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+		integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+	<span id="top"></span>
+	<header>
+		<nav class="header-l2">
+			<div class="container">
+				<div class="row">
+					<!-- LOGO -->
+					<div class="col-12 col-sm-12 col-md-4">
+						<a href="#" class="d-inline-block head-logo">
+							<img src="./assets/images/logo/Uriel_logo_white.jpeg" alt="">
+						</a>
+					</div>
+					<!-- SEARCh -->
+					<div class="col-10 col-sm-10 col-md-7 flex-v-center align-right">
+						<div class="text-header-sm">
+							<span>
+								<i class="fa fa-phone-alt fa-sm"></i>
+								<a href="tel:+1234568790" class="def-link">
+									+1234568790
+								</a>
+							</span>
+							<ul class="header-icons">
+								<li>
+									<a href="#" class="def-link">
+										<i class="fa fa-user" aria-hidden="true"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="def-link">
+										<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-2 col-sm-2 col-md-1 flex-v-center text-right">
+						<button class="btn btn-lg btn-link text-dark" type="button" aria-expanded="false">
+							<span class="navbar-toggler-icon">
+								<i class="fa fa-bars" aria-hidden="true"></i>
+							</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- CATEGORIES -->
+	<div class="header-l1">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<ul class="nav-links">
+						<li class="link-item"><a href="#" class="h-nav-link">CARPET BAGS</a></li>
+						<li class="link-item"><a href="#" class="h-nav-link">HANDBAGS</a></li>
+						<li class="link-item"><a href="#" class="h-nav-link">COLLECTIONS</a></li>
+						<li class="link-item"><a href="#" class="h-nav-link">LAPTOP BAGS</a></li>
+						<li class="link-item"><a href="#" class="h-nav-link">TOTE BAGS</a></li>
+						<li class="link-item drop-more">
+							<a href="#" class="h-nav-link">More</a>
+							<div class="drop-c drop-down">
+								<ul class="drop-list">
+									<li class="sub-link-item sub-drop-more">
+										<a href="#" class="drop-link">CROSSBODY BAGS</a>
+										<div class="sub-drop-c drop-left">
+											<ul class="sub-drop-list">
+												<li class="sub-drop-item">
+													<a href="#" class="sub-drop-link">BACKPACKS</a>
+												</li>
+												<li class="sub-drop-item">
+													<a href="#" class="sub-drop-link">BUCKET BAGS</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="sub-link-item">
+										<a href="#" class="drop-link">TOTE BAGS</a>
+									</li>
+									<li class="sub-link-item">
+										<a href="#" class="drop-link">VINTAGE</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<main>
+		<section class="banners" id="main-slider">
+			<div class="main-banner slider-item">
+				<div class="slide-desc data-bg-img" data-bg="./assets/images/model/Sample_model_1.jpeg">
+					<div class="container flex-v-center">
+						<div class="slide-content">
+							<h2 class="display-3 font-weight-bolder text-uppercase"><span
+									class="font-weight-light">Practical</span> <br>Backpacks</h2>
+							<p class="font-weight-bolder">Functional bags you will want to take everywhere they go.</p>
+							<a href="#" class="btn btn-red px-4 py-2 font-weight-bolder">Shop Now!</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-banner slider-item">
+				<div class="slide-desc data-bg-img" data-bg="./assets/images/model/Sample_model_2.jpeg">
+					<div class="container flex-v-center">
+						<div class="slide-content">
+							<h2 class="display-3 font-weight-bolder text-uppercase"><span
+									class="font-weight-light">Practical</span> <br>Backpacks</h2>
+							<p class="font-weight-bolder">Functional bags you will want to take everywhere they go.</p>
+							<a href="#" class="btn btn-red px-4 py-2 font-weight-bolder">Shop Now!</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="intro-items" id="intro">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-sm-6">
+
+						<div class="widget-image">
+							<img class="img-fluid" src="./assets/images/bg/alex-motoc-7nW9XgJifI0-unsplash.jpg"
+								alt="Photo by Alex Motoc on Unsplash">
+							<a class="d-none"
+								href="https://unsplash.com/@alexmotoc?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+								target="_blank" rel="noopener noreferrer">
+								<span>Photo by Alex Motoc on Unsplash</span>
+							</a>
+						</div>
+
+						<!-- <div class="widget-text">
+							<h2 class="widget-title">Text</h2>
+							<p class="widget-desc">
+								Discover the awesome collection by stylist Logancee this week. Come here and review it now!
+							</p>
+							<div class="widget-button">
+								<a href="#" class="widget-custom-link text-capitalize">Click here</a>
+							</div>
+						</div> -->
+
+						<!-- <div class="widget-text">
+							<h2 class="widget-title">Text</h2>
+							<p class="widget-desc">
+								New items are available in our store now, such as clothing, shoes, etc. Come here and grab them now!
+							</p>
+						</div> -->
+
+					</div>
+					<div class="col-sm-6">
+
+						<div class="widget-text widget-bordered">
+							<h2 class="widget-title">Welcome</h2>
+							<p class="widget-desc">
+								Welcome to the world of fashion. We are proud to present you the largest choice of
+								handbags on the web. Here you can find a great number of different goods. Our store
+								offers stylish, premium quality handbags at the lowest possible prices.
+							</p>
+						</div>
+
+						<!-- <div class="widget-text">
+							<h2 class="widget-title">Text</h2>
+							<p class="widget-desc">
+								New items are available in our store now, such as clothing, shoes, etc. Come here and grab them now!
+							</p>
+						</div> -->
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="banners" id="sale-banners">
+			<div class="sale-item">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6 p-0 sale-bg-img data-bg-img" data-bg="./assets/images/product/bag_20.jpeg">
+						</div>
+						<div class="col-md-6 p-0">
+							<div class="sale-desc">
+								<div class="sale-spacer">
+									<div class="spacer-line"></div>
+								</div>
+								<div class="sale-info">
+									<div class="sale-content">
+										<div class="sale-sub-head">SALE!</div>
+										<div class="spacer-md"></div>
+										<h2 class="sale-title">TOO HOT TO HANDLE BENTLEY BAG</h2>
+										<h2 class="sale-title title-colored">$500.00</h2>
+										<div class="spacer-md"></div>
+										<p class="sale-text">
+											Discover the new collection featuring a refined tote style brand new for
+											this season. A modern approach to luxury, the lady-like form has smooth,
+											sophisticated details, the ideal bags for the working women on the go.
+										</p>
+									</div>
+									<div class="sale-link-block">
+										<a href="#" class="sale-link">Shop now</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sale-item">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6 p-0 sale-bg-img data-bg-img" data-bg="./assets/images/product/bag_31.jpeg">
+						</div>
+						<div class="col-md-6 p-0">
+							<div class="sale-desc">
+								<div class="sale-spacer">
+									<div class="spacer-line"></div>
+								</div>
+								<div class="sale-info">
+									<div class="sale-content">
+										<div class="sale-sub-head">SALE!</div>
+										<div class="spacer-md"></div>
+										<h2 class="sale-title">TOO HOT TO HANDLE BENTLEY BAG</h2>
+										<h2 class="sale-title title-colored">$500.00</h2>
+										<div class="spacer-md"></div>
+										<p class="sale-text">
+											Discover the new collection featuring a refined tote style brand new for
+											this season. A modern approach to luxury, the lady-like form has smooth,
+											sophisticated details, the ideal bags for the working women on the go.
+										</p>
+									</div>
+									<div class="sale-link-block">
+										<a href="#" class="sale-link">Shop now</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sale-item sale-item-3">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6 p-0 sale-bg-img bg-3 data-bg-img"
+							data-bg="./assets/images/product/bag_42.jpeg"></div>
+						<div class="col-md-6 p-0">
+							<div class="sale-desc">
+								<div class="sale-spacer">
+									<div class="spacer-line"></div>
+								</div>
+								<div class="sale-info">
+									<div class="sale-content">
+										<div class="sale-sub-head">SALE!</div>
+										<div class="spacer-md"></div>
+										<h2 class="sale-title">TOO HOT TO HANDLE BENTLEY BAG</h2>
+										<h2 class="sale-title title-colored">$500.00</h2>
+										<div class="spacer-md"></div>
+										<p class="sale-text">
+											Discover the new collection featuring a refined tote style brand new for
+											this season. A modern approach to luxury, the lady-like form has smooth,
+											sophisticated details, the ideal bags for the working women on the go.
+										</p>
+									</div>
+									<div class="sale-link-block">
+										<a href="#" class="sale-link">Shop now</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="promo-item-container" id="promo">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-4 promo-item promo-1">
+						<div class="row">
+							<div class="col-12 text-center">
+								<div class="promo-logo-block">
+									<div class="promo-logo">
+										<svg class="icon">
+											<use xlink:href="./assets/images/svg/icons.svg#plane" />
+										</svg>
+									</div>
+								</div>
+								<div class="promo-text">
+									<h3 class="promo-title">WORLDWIDE SHIPPING</h3>
+									<p class="promo-desc">
+										On all our store items over $200
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 promo-item promo-2">
+						<div class="row">
+							<div class="col-12 text-center">
+								<div class="promo-logo-block">
+									<div class="promo-logo">
+										<svg class="icon">
+											<use xlink:href="./assets/images/svg/icons.svg#card" />
+										</svg>
+									</div>
+								</div>
+								<div class="promo-text">
+									<h3 class="promo-title">MEMBER DISCOUNT</h3>
+									<p class="promo-desc">
+										Up to 29% discount for all registered users
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 promo-item promo-3">
+						<div class="row">
+							<div class="col-12 text-center">
+								<div class="promo-logo-block">
+									<div class="promo-logo">
+										<svg class="icon">
+											<use xlink:href="./assets/images/svg/icons.svg#purse" />
+										</svg>
+									</div>
+								</div>
+								<div class="promo-text">
+									<h3 class="promo-title">PREMIUM SUPPORT</h3>
+									<p class="promo-desc">
+										24 hours a day, including holidays
+									</p>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="intro-items" id="intro2">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-sm-6">
+
+						<div class="widget-image">
+							<img class="img-fluid" src="./assets/images/bg/anthony-delanoix-QAwciFlS1g4-unsplash.jpg"
+								alt="Photo by Anthony DELANOIX on Unsplash">
+							<a class="d-none"
+								href="https://unsplash.com/@anthonydelanoix?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+								target="_blank" rel="noopener noreferrer">
+								<span>Photo by Anthony DELANOIX on Unsplash</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-6">
+
+						<div class="widget-text widget-bordered">
+							<h2 class="widget-title">Newsletter</h2>
+							<p class="widget-desc">
+								Subscribe to the Handbags Store mailing list to receive updates on new arrivals,
+								special
+								offers and
+								other discount information.
+							</p>
+							<div class="widget-button">
+								<a href="#" class="widget-custom-link"><span>Subscribe</span></a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="spacer-large"></div>
+		<section class="footer-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3 col-6">
+						<h3 class="footer-link-head">Information</h3>
+						<ul class="footer-nav-links">
+							<li><a href="#" class="def-link footer-nav-link">ABOUT US</a></li>
+							<li><a href="#" class="def-link footer-nav-link">DELIVERY</a></li>
+							<li><a href="#" class="def-link footer-nav-link">LEGAL NOTICE</a></li>
+							<li><a href="#" class="def-link footer-nav-link">TERMS AND CONDITIONS OF USE</a></li>
+							<li><a href="#" class="def-link footer-nav-link">SECURE PAYMENT</a></li>
+							<li><a href="#" class="def-link footer-nav-link">WARRANTY</a></li>
+							<li><a href="#" class="def-link footer-nav-link">FAQS</a></li>
+							<li><a href="#" class="def-link footer-nav-link">CONTACT</a></li>
+							<li><a href="#" class="def-link footer-nav-link">OUR STORES</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-3 col-6">
+						<h3 class="footer-link-head">Categories</h3>
+						<ul class="footer-nav-links">
+							<li><a href="#" class="def-link footer-nav-link">CARPET BAGS</a></li>
+							<li><a href="#" class="def-link footer-nav-link">HANDBAGS</a></li>
+							<li><a href="#" class="def-link footer-nav-link">COLLECTIONS</a></li>
+							<li><a href="#" class="def-link footer-nav-link">LAPTOP BAGS</a></li>
+							<li><a href="#" class="def-link footer-nav-link">TOTE BAGS</a></li>
+							<li><a href="#" class="def-link footer-nav-link">VINTAGE</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-3 col-6">
+						<h3 class="footer-link-head">Follow us</h3>
+						<ul class="footer-nav-links">
+							<li><a href="#" class="def-link footer-nav-link">FACEBOOK</a></li>
+							<li><a href="#" class="def-link footer-nav-link">TWITTER</a></li>
+							<li><a href="#" class="def-link footer-nav-link">YOUTUBE</a></li>
+							<li><a href="#" class="def-link footer-nav-link">PINTEREST</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-3 col-6">
+						<h3 class="footer-link-head">Contacts</h3>
+						<ul class="footer-nav-links">
+							<li class="list-dot-img">
+								<a href="#" class="def-link footer-nav-link"><i class="fas fa-map-marker-alt"></i> 7563
+									ST. VICENT PLACE, GLASGOW</a>
+							</li>
+							<li class="list-dot-img">
+								<a href="#" class="def-link footer-nav-link"><i class="fa fa-phone-alt"
+										aria-hidden="true"></i> (123) 456-7890</a>
+							</li>
+							<li class="list-dot-img">
+								<a href="#" class="def-link footer-nav-link"><i class="fa fa-envelope"
+										aria-hidden="true"></i> INFO@DEMOLINK.ORG</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="spacer-large"></div>
+		<section class="footer-copy">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 text-center">
+						<p class="copy-text">
+							&copy; 2020 Uriel. All Right Reserved.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</footer>
+
+	<div class="to-top">
+		<a href="javascript:;" class="d-block w-100 h-100">
+			<i class="fa fa-chevron-up" aria-hidden="true"></i>
+		</a>
+	</div>
+	<!-- JS -->
+	<!-- bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+	</script>
+	<!-- flickity -->
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script>
+
+	<!--  -->
+	<script src="./assets/js/script.js"></script>
+</body>
+
+</html>
