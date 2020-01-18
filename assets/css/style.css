@@ -86,12 +86,27 @@ a.def-link:hover {
   color: var(--color-black);
 }
 
+.flex-v-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 100%;
+}
+
+.flex-h-center {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .align-right {
   align-items: flex-end;
 }
 
 span.navbar-toggler-icon {
   font-size: 26px;
+  width: auto;
 }
 
 /* #endregion */
@@ -261,14 +276,6 @@ li.link-item:hover a.h-nav-link {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.flex-v-center {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  flex-grow: 1;
-  min-height: 100%;
 }
 
 section.intro-items {
