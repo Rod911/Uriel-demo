@@ -1,3 +1,6 @@
+var query = document.querySelector.bind(document);
+var queryAll = document.querySelectorAll.bind(document);
+
 $(".banners").flickity({
   cellAlign: "left",
   contain: false,
@@ -16,7 +19,7 @@ $(".carousel").flickity({
   autoPlay: 5000
 });
 
-document.querySelectorAll(".to-top").forEach(e => {
+queryAll(".to-top").forEach(e => {
   e.addEventListener("click", function() {
     window.scroll({
       top: 0,
@@ -26,7 +29,7 @@ document.querySelectorAll(".to-top").forEach(e => {
   });
 });
 
-document.querySelectorAll(".data-bg-img").forEach(el => {
+queryAll(".data-bg-img").forEach(el => {
   let url = el.getAttribute("data-bg");
   if (url) {
     el.style.backgroundImage = "url('" + url + "')";
@@ -40,9 +43,9 @@ window.addEventListener("scroll", function(e) {
     window.requestAnimationFrame(function() {
       var currentScrollPos = window.pageYOffset;
       if (currentScrollPos < 200) {
-        document.querySelector(".to-top").classList.add("hide");
+        query(".to-top").classList.add("hide");
       } else {
-        document.querySelector(".to-top").classList.remove("hide");
+        query(".to-top").classList.remove("hide");
       }
       ticking = false;
     });
@@ -55,15 +58,29 @@ window.addEventListener("scroll", function(e) {
 var observer = new IntersectionObserver(
   function(entries) {
     if (entries[0].intersectionRatio === 0)
-      document
-        .querySelector(".header-l1")
-        .classList.add("active-sticky");
+      query(".header-l1").classList.add("active-sticky");
     else if (entries[0].intersectionRatio === 1)
-      document
-        .querySelector(".header-l1")
-        .classList.remove("active-sticky");
+      query(".header-l1").classList.remove("active-sticky");
   },
   { threshold: [0, 1] }
 );
 
-observer.observe(document.querySelector("#top"));
+observer.observe(query("#top"));
+
+// SIDEBAR TOGGLE
+
+queryAll(".sidebar-toggle").forEach(function(btn) {
+  btn.addEventListener("click", function() {
+    var sidebar = query(".sidebar");
+    var scrollWidth = (window.innerWidth - document.documentElement.clientWidth);
+    query('html').style.paddingRight = scrollWidth + 'px';
+    var activeClass = "sidebar-active";
+    if(sidebar.classList.contains(activeClass)){
+      sidebar.classList.remove(activeClass);
+      query('html').style.overflow = "auto";
+    } else {
+      sidebar.classList.add(activeClass)
+      query('html').style.overflow = "hidden";
+    }
+  });
+});
