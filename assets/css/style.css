@@ -511,9 +511,9 @@ a.sale-link:hover {
 
 /* #region sale carousel */
 
-#sale-banners {
+/* #sale-banners {
   margin-bottom: 40px;
-}
+} */
 
 /* .carousel-sale-item {
 } */
@@ -549,7 +549,7 @@ a.sale-link:hover {
   background-color: #252222d8;
 }
 
-/* #emdregion */
+/* #endregion */
 
 /* #region promo */
 

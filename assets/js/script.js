@@ -11,7 +11,7 @@ $(".carousel").flickity({
   cellAlign: "center",
   wrapAround: true,
   contain: false,
-  pageDots: true,
+  pageDots: false,
   pauseAutoPlayOnHover: false,
   autoPlay: 5000
 });
