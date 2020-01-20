@@ -53,7 +53,7 @@ a.def-link:hover {
   padding: 1.5rem 0;
   background: #ffffff;
 }
-
+/* 
 .head-logo {
   height: 10rem;
   position: absolute;
@@ -68,7 +68,7 @@ a.def-link:hover {
   padding-top: 0;
   border-radius: 0.5rem;
   box-shadow: 0 0.5rem 0.5rem -0.5rem rgba(0, 0, 0, 0.3);
-}
+} */
 
 .text-header-sm {
   font-weight: 700;
@@ -137,15 +137,25 @@ span.navbar-toggler-icon {
   z-index: 50;
 }
 
-/* .l1-head-logo{
+.l1-head-logo {
   position: absolute;
-  width: auto;
-  height: 100%;
+  z-index: 60;
+  transition: cubic-bezier(0.45, 0, 0.55, 1) 0.4s all;
+  transform: translateY(-7.5rem) scale(1);
 }
 
-.l1-head-logo img{
-  height: 100%;
-} */
+.l1-head-logo img {
+  height: auto;
+  width: 20rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 0.5rem -0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.active-sticky .l1-head-logo {
+  transform: translateY(-5.8rem) scale(0.45);
+}
 
 .header-l1 ul.nav-links {
   list-style: none;
@@ -159,7 +169,7 @@ span.navbar-toggler-icon {
   padding: 0 1rem;
 }
 
-.header-l1 .display-4{
+.header-l1 .display-4 {
   color: #cacaca;
 }
 
@@ -391,9 +401,9 @@ a.widget-custom-link:hover::after {
 
 /* #endregion */
 
-/* #region sale banners */
+/* #region sale banners del */
 
-#sale-banners {
+/* #sale-banners {
   width: 100%;
   background-color: var(--color-black);
 }
@@ -495,9 +505,50 @@ a.sale-link {
 a.sale-link:hover {
   background-color: #999999;
   color: #ffffff;
-}
+} */
 
 /* #endregion */
+
+/* #region sale carousel */
+
+#sale-banners {
+  margin-bottom: 40px;
+}
+
+/* .carousel-sale-item {
+} */
+
+.carousel-sale-item .carousel-link{
+  display: block;
+  width: 45rem;
+  max-width: 100%;
+  height: 50rem;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.carousel-sale-item .sale-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  background-color: #252222a6;
+  margin: 0;
+  color: var(--color-grey);
+  transition: ease-in-out 0.3s;
+  transition-property: color, background-color;
+  text-align: center;
+}
+
+.carousel-sale-item:hover .sale-title {
+  color: var(--color-highlight);
+  background-color: #252222d8;
+}
+
+/* #emdregion */
 
 /* #region promo */
 
