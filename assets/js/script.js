@@ -25,7 +25,6 @@ document.querySelectorAll(".data-bg-img").forEach(el => {
   }
 });
 
-
 // SCROLL THROTTLING TO AVOID UNNECESSARY SCROLL EVENTS
 let ticking = false;
 
