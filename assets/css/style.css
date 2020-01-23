@@ -4,6 +4,7 @@
   --color-black: #252222;
   --color-grey: #939191;
   --color-highlight: #cf6f50;
+  --color-light: #eceaea;
 }
 
 body {
@@ -54,15 +55,22 @@ a.def-link:hover {
 /* #region header top */
 
 .header-l2 {
-  padding: 1.5rem 0;
-  background: #ffffff;
+  padding: 3rem 0;
+  background: transparent;
+  /* position: -webkit-sticky; */
+  position: absolute;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), transparent 80%)
+    no-repeat;
 }
 
 .text-header-sm {
   font-weight: 700;
   font-style: normal;
   font-family: "Roboto", sans-serif;
-  color: var(--color-black);
+  color: var(--color-light);
   font-size: 24px;
   line-height: 1.2;
   letter-spacing: 2px;
@@ -82,8 +90,8 @@ a.def-link:hover {
   padding: 0 0.5rem;
 }
 
-.header-icons a {
-  color: var(--color-black);
+.text-header-sm a {
+  color: var(--color-light);
 }
 
 .flex-v-center {
@@ -129,12 +137,14 @@ span.navbar-toggler-icon {
   position: absolute;
   z-index: 60;
   transition: cubic-bezier(0.45, 0, 0.55, 1) 0.4s all;
-  transform: translateY(-7.5rem) scale(1);
+  transform: 
+  translateY(-2rem) 
+  scale(1);
 }
 
 .l1-head-logo img {
   height: auto;
-  width: 20rem;
+  width: 10rem;
   max-width: 100%;
   padding: 1rem;
   background-color: #fff;
@@ -317,7 +327,7 @@ li.link-item:hover > a.h-nav-link {
   padding: 0 0.5rem;
 }
 
-.sidebar-content .sidebar-icons li{
+.sidebar-content .sidebar-icons li {
   display: inline-block;
   padding: 0.5rem;
 }
@@ -387,13 +397,17 @@ li.link-item:hover > a.h-nav-link {
 
 /* #region slider banner */
 
+#main-slider {
+  min-height: 100vh;
+}
+
 .slider-item {
   width: 100%;
 }
 
 .main-banner .slide-desc {
-  height: 70vh;
-  min-height: 24rem;
+  /* height: 70vh; */
+  min-height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -849,11 +863,11 @@ p.copy-text {
 
   /* #region footer */
 
-  .spacer-large{
+  .spacer-large {
     height: 0;
   }
 
-  .footer-content{
+  .footer-content {
     padding-top: 0;
   }
 

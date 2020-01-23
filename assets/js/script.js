@@ -7,7 +7,8 @@ $(".banners").flickity({
   fade: true,
   wrapAround: true,
   pageDots: false,
-  autoPlay: 5000
+  autoPlay: 2000,
+  prevNextButtons: false,
 });
 
 $(".carousel").flickity({
@@ -55,17 +56,17 @@ window.addEventListener("scroll", function(e) {
 });
 
 // DETECT STICKY HEADER
-var observer = new IntersectionObserver(
-  function(entries) {
-    if (entries[0].intersectionRatio === 0)
-      query(".header-l1").classList.add("active-sticky");
-    else if (entries[0].intersectionRatio === 1)
-      query(".header-l1").classList.remove("active-sticky");
-  },
-  { threshold: [0, 1] }
-);
+// var observer = new IntersectionObserver(
+//   function(entries) {
+//     if (entries[0].intersectionRatio === 0)
+//       query(".header-l2").classList.add("active-sticky");
+//     else if (entries[0].intersectionRatio === 1)
+//       query(".header-l2").classList.remove("active-sticky");
+//   },
+//   { threshold: [0, 1] }
+// );
 
-observer.observe(query("#top"));
+// observer.observe(query("#top"));
 
 // SIDEBAR TOGGLE
 
@@ -74,6 +75,7 @@ queryAll(".sidebar-toggle").forEach(function(btn) {
     var sidebar = query(".sidebar");
     var scrollWidth = (window.innerWidth - document.documentElement.clientWidth);
     query('html').style.paddingRight = scrollWidth + 'px';
+    query('.header-l2').style.paddingRight = scrollWidth + 'px';
     var activeClass = "sidebar-active";
     if(sidebar.classList.contains(activeClass)){
       sidebar.classList.remove(activeClass);
