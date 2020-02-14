@@ -38,13 +38,13 @@ a.def-link:hover {
   color: white;
 }
 
-.slider-item {
+/* .slider-item {
   opacity: 0 !important;
   transition: opacity 1s ease !important;
 }
 .slider-item.is-selected {
   opacity: 1 !important;
-}
+} */
 
 .show-resp {
   display: none;
@@ -122,13 +122,16 @@ span.navbar-toggler-icon {
 /* #region header nav */
 
 .header-l1 {
-  padding: 28px 0;
+  padding: 1rem 0;
 }
 
 .header-l1 {
-  background-color: var(--color-black);
+  background-color: transparent;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2), transparent);
   position: -webkit-sticky;
   position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 50;
 }
@@ -137,14 +140,12 @@ span.navbar-toggler-icon {
   position: absolute;
   z-index: 60;
   transition: cubic-bezier(0.45, 0, 0.55, 1) 0.4s all;
-  transform: 
-  translateY(-2rem) 
-  scale(1);
+  transform: translateY(-0.5rem) scale(1);
 }
 
 .l1-head-logo img {
   height: auto;
-  width: 10rem;
+  width: 9rem;
   max-width: 100%;
   padding: 1rem;
   background-color: #fff;
@@ -176,13 +177,13 @@ span.navbar-toggler-icon {
   font-size: 22px;
   padding: 15px 0;
   display: inline-block;
-  color: #939191;
+  color: var(--color-light);
   text-decoration: none;
   text-transform: uppercase;
 }
 
 li.link-item:hover > a.h-nav-link {
-  color: #ffffff;
+  color: var(--color-highlight);
 }
 
 .drop-more,
@@ -226,24 +227,24 @@ li.link-item:hover > a.h-nav-link {
 }
 
 .drop-more .drop-top {
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
   bottom: 100%;
   left: 0;
 }
 
 .drop-more .drop-down {
   top: 100%;
-  left: 0;
+  right: 0;
 }
 
 .drop-more .drop-left {
-  padding-right: 1rem;
+  padding-right: 0.5rem;
   top: 0;
   right: 100%;
 }
 
 .drop-more .drop-right {
-  padding-left: 1rem;
+  padding-left: 0.5rem;
   top: 0;
   left: 100%;
 }
@@ -274,7 +275,7 @@ li.link-item:hover > a.h-nav-link {
 
 .drop-more:hover .drop-c,
 .drop-more a.h-nav-link:focus + .drop-c {
-  padding-top: 1rem;
+  padding-top: 0.5rem;
 }
 
 .drop-more:hover .drop-c,
@@ -750,6 +751,15 @@ a.sale-link:hover {
   padding: 0;
 }
 
+.footer-nav-links .list-dot-img {
+  padding-left: 1.5rem;
+}
+
+.footer-nav-links .list-dot-img i {
+  margin-left: -1.5rem;
+  margin-right: 0.3rem;
+}
+
 .footer-nav-links a.footer-nav-link {
   font-weight: 400;
   font-style: normal;
@@ -768,7 +778,7 @@ a.sale-link:hover {
 
 .footer-copy {
   background-color: #eeedeb;
-  padding: 40px 0;
+  padding: 1.5rem 0;
   font-weight: 300;
   font-style: normal;
   font-family: "Roboto", sans-serif;
@@ -838,9 +848,9 @@ p.copy-text {
     width: 0;
   }
 
-  .l1-head-logo {
+  /* .l1-head-logo {
     transform: translateY(-1.5rem) scale(1);
-  }
+  } */
 
   .l1-head-logo img {
     width: 8rem;

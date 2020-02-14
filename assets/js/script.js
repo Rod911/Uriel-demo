@@ -75,7 +75,7 @@ queryAll(".sidebar-toggle").forEach(function(btn) {
     var sidebar = query(".sidebar");
     var scrollWidth = (window.innerWidth - document.documentElement.clientWidth);
     query('html').style.paddingRight = scrollWidth + 'px';
-    query('.header-l2').style.paddingRight = scrollWidth + 'px';
+    query('.header-l1').style.paddingRight = scrollWidth + 'px';
     var activeClass = "sidebar-active";
     if(sidebar.classList.contains(activeClass)){
       sidebar.classList.remove(activeClass);
